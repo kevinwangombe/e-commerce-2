@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopHub - E-commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="brand">ShopHub</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="#" class="cart-btn">
+              <span>🛒</span>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- section Hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Welcome to ShopHub</h2>
+        <p>Discover amazing products at unbeatable prices</p>
+        <button class="cta-btn">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section categories">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">👕</div>
+          <h3 class="category-name">Fashion</h3>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">💻</div>
+          <h3 class="category-name">Electronics</h3>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🏠</div>
+          <h3 class="category-name">Home & Garden</h3>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">⚽</div>
+          <h3 class="category-name">Sports</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section products">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="img-container">
+            <img
+              src="/src/image/pexels-audio-1840073_1920.jpg"
+              alt="Premium Headphones"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Premium Headphones</h3>
+            <p class="product-price">KSh 8,999</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-container">
+            <img
+              src="/src/image/29277261-watch-7469601_1920.jpg"
+              alt="Smart Watch"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Smart Watch</h3>
+            <p class="product-price">KSh 19,999</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-container">
+            <img
+              src="/src/image/riekus-laptop-6332543_1920.jpg"
+              alt="Laptop Stand"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Laptop Stand</h3>
+            <p class="product-price">KSh 4,599</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-container">
+            <img
+              src="https://via.placeholder.com/300x300/E91E63/ffffff?text=Wireless+Mouse"
+              alt="Wireless Mouse"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Wireless Mouse</h3>
+            <p class="product-price">KSh 2,999</p>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <h2 class="section-title">Our Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="img-container">
+            <img
+              src="https://via.placeholder.com/400x250/9C27B0/ffffff?text=Project+Alpha"
+              alt="Project Alpha"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Project Alpha</h3>
+            <p class="project-desc">
+              Revolutionary e-commerce platform with AI-powered recommendations
+            </p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="img-container">
+            <img
+              src="https://via.placeholder.com/400x250/00BCD4/ffffff?text=Project+Beta"
+              alt="Project Beta"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Project Beta</h3>
+            <p class="project-desc">
+              Mobile-first shopping experience with augmented reality features
+            </p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="img-container">
+            <img
+              src="https://via.placeholder.com/400x250/FF5722/ffffff?text=Project+Gamma"
+              alt="Project Gamma"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Project Gamma</h3>
+            <p class="project-desc">
+              Sustainable marketplace connecting local artisans with global
+              customers
+            </p>
+            <a href="#" class="project-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h3>Shopping Cart</h3>
+          <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+          <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-amount">KSh 0</span>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
